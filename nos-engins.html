@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez JLTP, votre partenaire en travaux publics : location d'engins performants, terrassement, démolition et plus encore !">
+    <meta name="keywords" content="JLTP, BTP, travaux publics, Martinique, location engins, terrassement, démolition, construction">
+    <meta name="author" content="JLTP">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/vnd.icon" href="assets/images/JLTP_logo.jpg">
+    <meta property="og:image" content="/assets/images/JLTP_logo.jpg">
+    <title>JLTP - Nos Engins</title>
+    <!-- Tailwind CSS -->
+    <link href="/src/output.css" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/stylesheets2.css">
+    <link rel="stylesheet" href="assets/styles/contact-animations.css">
+    <link rel="stylesheet" href="assets/styles/animations/machinery-animations.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    
+    <!-- Scripts -->
+    <script src="assets/script.js" defer></script>
+    <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/machinery-animations.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            });
+        });
+    </script>
+    <style>
+        .bg-grid-pattern {
+            background-image: linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
+                            linear-gradient(to bottom, rgba(0,0,0,0.1) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .equipment-card {
+            transition: opacity 0.1s ease-out;
+        }
+
+        .animate-bounce {
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0) translateX(-50%);
+            }
+            50% {
+                transform: translateY(-25%) translateX(-50%);
+            }
+        }
+
+        @keyframes scale-x {
+            from { transform: scaleX(0); }
+            to { transform: scaleX(1); }
+        }
+
+        .animate-scale-x {
+            animation: scale-x 0.8s ease-out forwards;
+            animation-delay: 0.6s;
+        }
+
+        .backdrop-blur-sm {
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+    </style>
+    <!-- LINK ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 loading">
+
+    <!------------ START PRELOADER  ------------>
+    <div id="preloader" class="flex items-center justify-center bg-gray-800 w-full h-screen">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!------------ END PRELOADER  ------------>
+
+    <!------------ START HEADER  ------------>
+    <header id="Accueil" class="relative">
+        <nav class="navbar fixed w-full z-50 px-4 py-4 flex justify-between items-center bg-white transition-all duration-300 transform translate-y-0">
+            <a class="text-3xl font-bold max-xl:order-last" href="/index.html">
+                <img src="/assets/images/JLTP_logo.jpg" alt="logo JLTP - Société de BTP" style="height:5rem">
+            </a>
+            <button class="navbar-burger flex items-center p-3 hover:bg-gray-50 rounded-full transition-colors duration-200 xl:hidden">
+                <svg class="h-5 w-5 text-gray-600" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                </svg>
+            </button>
+            <div class="flex-1"></div>
+            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto xl:flex lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/index.html">Accueil</a></li>
+
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/nos-activites.html">Nos Activités</a></li>
+
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/a-propos.html">A Propos</a></li>
+
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/realisations.html">Réalisations</a></li>
+
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/nous-rejoindre.html">Nous Rejoindre</a></li>
+
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/nos-engins.html">Nos Engins</a></li>
+            </ul>
+            <a class="mr-3 rounded-sm max-xl:hidden bg-orange-600 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-black-500/20 transition-all hover:shadow-lg hover:shadow-black-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" href="/nous-contacter.html">CONTACTEZ NOUS</a>
+        </nav>
+        <div class="navbar-menu fixed inset-0 z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-[85%] max-w-sm py-8 px-8 bg-white overflow-y-auto transform transition-transform duration-300 ease-in-out" style="box-shadow: 5px 0 25px rgba(0,0,0,0.1);">
+                <div class="flex items-center mb-10">
+                    <button class="navbar-close p-2 hover:bg-gray-100 rounded-full transition-colors duration-200">
+                        <svg class="h-6 w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <div class="flex-1"></div>
+                    <a class="text-3xl font-bold leading-none" href="index.html">
+                        <img src="/assets/images/JLTP_logo.jpg" alt="logo JLTP - Société de BTP" class="h-8 w-auto">
+                    </a>
+                </div>
+                <div class="flex flex-col justify-between h-full">
+                    <ul class="space-y-3 mb-8 text-center">
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/index.html">Accueil</a>
+                        </li>
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/nos-activites.html">Nos Activités</a>
+                        </li>
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/a-propos.html">A Propos</a>
+                        </li>
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/realisations.html">Réalisations</a>
+                        </li>
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/nous-rejoindre.html">Nous Rejoindre</a>
+                        </li>
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/nos-engins.html">Nos Engins</a>
+                        </li>
+                    </ul>
+                    <div class="mt-auto px-6">
+                        <a class="block capitalize w-full px-4 py-2 lg:px-8 lg:py-4 text-md lg:text-base font-semibold text-center text-white bg-orange-500 hover:bg-orange-600 rounded-lg transition-colors duration-200" href="/nous-contacter.html">Nous Contacter</a>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <span class="text-sm text-gray-500">Copyright © 2025 JLTP</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!------------- END HEADER  ------------->
+
+<section class="min-h-screen relative overflow-hidden">
+    <!-- Particle animation container -->
+    <div class="particles-container absolute inset-0 pointer-events-none"></div>
+    <!-- Grid background with enhanced styling -->
+    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    
+    <div class="w-full mx-auto relative z-10">
+        <!-- Modern header with clean design -->
+        <div class="relative overflow-hidden py-20 mb-8">
+
+            <!-- START Flèche de défilement avec effet d'exploration -->
+            <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 z-10">
+                <button onclick="scrollToProjects()" class="animate-bounce group relative flex items-center justify-center p-2 w-10 h-10 bg-black/20 rounded-full shadow-lg ring-1 ring-black/20 transition-all duration-300">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <script>
+                function scrollToProjects() {
+                    document.getElementById('Engins').scrollIntoView({ behavior: 'smooth' });
+                }
+            </script>
+            <!-- END Flèche de défilement avec effet d'exploration -->
+            
+            <!-- Enhanced grid effect with gradient -->
+            <div class="absolute inset-0">
+                <div class="absolute inset-0 bg-[linear-gradient(to_right,#E5E7EB_1px,transparent_1px),linear-gradient(to_bottom,#E5E7EB_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]">
+                </div>
+            </div>
+
+            <div class="relative w-full mx-auto pt-[6rem] px-4 sm:px-6 lg:px-8">
+                <!-- Main content container with enhanced animations -->
+                <div class="flex flex-col items-center justify-center space-y-12 relative min-h-[80vh]">
+                    <!-- Title section with advanced animations -->
+                    <div class="text-center space-y-8 max-w-5xl w-full" data-aos="fade-up" data-aos-duration="1000">
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 tracking-tight relative inline-flex flex-col items-center">
+                            <span class="bg-clip-text text-transparent bg-gradient-to-r from-orange-600 via-orange-500 to-orange-600 hover:scale-105 transition-transform duration-300">
+                                Notre Flotte d'Engins
+                            </span>
+                            <div class="mt-4 h-2 w-60 bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 rounded-full transform origin-center animate-scale-x"></div>
+                        </h1>
+                        
+                        <p class="mt-8 sm:mt-12 text-md md:text-xl lg:text-2xl xl:text-3xl text-gray-700 leading-relaxed max-w-4xl mx-auto font-light px-4 sm:px-8" data-aos="fade-up" data-aos-delay="200">
+                            Des équipements de pointe pour vos projets les plus ambitieux
+                        </p>
+                        
+                        <!-- Description section with staggered animation -->
+                        <div class="mt-8 flex flex-col space-y-6" data-aos="fade-up" data-aos-delay="400">
+                            <p class="text-gray-600 text-md md:text-xl lg:text-2xl xl:text-3xl leading-relaxed">
+                                Découvrez notre flotte d'engins de chantier moderne et performante
+                            </p>
+                            <p class="text-gray-500 text-md md:text-xl lg:text-2xl xl:text-3xl">
+                                Qualité, fiabilité et expertise à votre service
+                            </p>
+                        </div>
+                        
+                        <!-- CTA section with hover effects -->
+                        <div class="mt-12 flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="600">
+                            <a href="/page-activites/location-engins.html" class="px-6 py-3 md:px-8 md:py-4 bg-orange-500 text-white rounded-lg shadow-lg hover:bg-orange-600 transform hover:scale-105 transition-all duration-300 flex items-center space-x-2">
+                                <span>Nos Locations</span>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                </svg>
+                            </a>
+                            <a href="/nous-contacter.html" class="px-8 py-3 md:px-10 md:py-4 bg-gray-100 text-gray-800 rounded-lg shadow-lg hover:bg-gray-200 transform hover:scale-105 transition-all duration-300">
+                                Nous Contacter
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Stats Cards Section -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 px-4 max-w-7xl mx-auto" data-aos="fade-up" data-aos-delay="800">
+                        <!-- Machine Spécialisée Card -->
+                        <div class="bg-white rounded-xl shadow-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl relative overflow-hidden group">
+                            <div class="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-orange-600/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
+                                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">Machines Spécialisées</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Une flotte d'engins modernes et performants</p>
+                                <div class="mt-4 flex items-center">
+                                    <span class="text-3xl font-bold text-orange-600">40+</span>
+                                    <span class="ml-2 text-gray-500">Engins spécialisés</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Satisfaction Client Card -->
+                        <div class="bg-white rounded-xl shadow-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl relative overflow-hidden group">
+                            <div class="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-orange-600/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
+                                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">Satisfaction Client</h3>
+                                <p class="text-sm sm:text-base text-gray-600">La qualité de service est notre priorité absolue</p>
+                                <div class="mt-4 flex items-center">
+                                    <span class="text-3xl font-bold text-orange-600">100%</span>
+                                    <span class="ml-2 text-gray-500">Clients satisfaits</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Expertise Card -->
+                        <div class="bg-white rounded-xl shadow-xl p-6 transform hover:scale-105 transition-all duration-300 hover:shadow-2xl relative overflow-hidden group">
+                            <div class="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-orange-600/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                            <div class="relative z-10">
+                                <div class="w-16 h-16 bg-orange-500/10 rounded-lg flex items-center justify-center mb-4">
+                                    <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 mb-2">Expertise</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Une équipe qualifiée à votre service</p>
+                                <div class="mt-4 flex items-center">
+                                    <span class="text-3xl font-bold text-orange-600">35+</span>
+                                    <span class="ml-2 text-gray-500">Années d'expérience</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- END LANDING PAGE -->
+
+<!-- START SECTION ENGINS -->
+        <!-- Filtres -->
+        <!-- Menu de filtrage unifié -->
+        <div id="Engins" class="relative mb-16 px-4 animate-fade-in" style="animation-delay: 0.4s">
+            <!-- Version mobile (md-) -->
+            <div class="md:hidden relative">
+                <button onclick="toggleFilterMenu()" class="w-full flex items-center justify-between px-4 sm:px-6 py-3 bg-white rounded-xl shadow-sm border border-gray-100 hover:border-orange-200 transition-all duration-300 text-sm sm:text-base">
+                    <span class="text-gray-700 font-medium">Filtrer par catégorie</span>
+                    <svg id="filterArrow" class="w-5 h-5 text-gray-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                
+                <div id="filterMenu" class="hidden absolute left-2 right-2 mt-2 py-2 bg-white rounded-xl shadow-xl border border-gray-100 z-50">
+                    <button onclick="selectFilter(this)" data-category="all" class="w-full px-6 py-3 text-left text-gray-700 hover:bg-orange-50 transition-colors duration-200 active-filter">
+                        Tous les engins
+                    </button>
+                    <button onclick="selectFilter(this)" data-category="pelle" class="w-full px-6 py-3 text-left text-gray-700 hover:bg-orange-50 transition-colors duration-200">
+                        Pelles mécaniques
+                    </button>
+                    <button onclick="selectFilter(this)" data-category="compacteur" class="w-full px-6 py-3 text-left text-gray-700 hover:bg-orange-50 transition-colors duration-200">
+                        Compacteurs
+                    </button>
+                    <button onclick="selectFilter(this)" data-category="demolition" class="w-full px-6 py-3 text-left text-gray-700 hover:bg-orange-50 transition-colors duration-200">
+                        Démolition
+                    </button>
+                    <button onclick="selectFilter(this)" data-category="bulldozer" class="w-full px-6 py-3 text-left text-gray-700 hover:bg-orange-50 transition-colors duration-200">
+                        Bulldozers
+                    </button>
+                    <button onclick="selectFilter(this)" data-category="camion" class="w-full px-6 py-3 text-left text-gray-700 hover:bg-orange-50 transition-colors duration-200">
+                        Camions
+                    </button>
+                </div>
+            </div>
+
+            <!-- Version tablette et desktop (md+) -->
+            <div class="hidden md:flex flex-wrap justify-center gap-4">
+                <button onclick="selectFilter(this)" data-category="all" class="px-6 py-3 rounded-xl bg-white shadow-sm border border-gray-100 text-gray-700 font-medium hover:border-orange-200 transition-all duration-300 active-filter">
+                    Tous les engins
+                </button>
+                <button onclick="selectFilter(this)" data-category="pelle" class="px-6 py-3 rounded-xl bg-white shadow-sm border border-gray-100 text-gray-700 font-medium hover:border-orange-200 transition-all duration-300">
+                    Pelles mécaniques
+                </button>
+                <button onclick="selectFilter(this)" data-category="bulldozer" class="px-6 py-3 rounded-xl bg-white shadow-sm border border-gray-100 text-gray-700 font-medium hover:border-orange-200 transition-all duration-300">
+                    Bulldozers
+                </button>
+                <button onclick="selectFilter(this)" data-category="compacteur" class="px-6 py-3 rounded-xl bg-white shadow-sm border border-gray-100 text-gray-700 font-medium hover:border-orange-200 transition-all duration-300">
+                    Compacteurs
+                </button>
+                <button onclick="selectFilter(this)" data-category="demolition" class="px-6 py-3 rounded-xl bg-white shadow-sm border border-gray-100 text-gray-700 font-medium hover:border-orange-200 transition-all duration-300">
+                    Démolition
+                </button>
+                <button onclick="selectFilter(this)" data-category="camion" class="px-6 py-3 rounded-xl bg-white shadow-sm border border-gray-100 text-gray-700 font-medium hover:border-orange-200 transition-all duration-300">
+                    Camions
+                </button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Cards Container -->
+        <div class="container mx-auto pb-16 mt-8 px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 px-2 sm:px-0">
+                <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="pelle" style="animation-delay: 0.1s">
+                    <div id="card-1" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                        <!-- Front Side -->
+                        <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-400">
+                            <div class="relative overflow-hidden">
+                                <img src="assets/images/engins/8MCR.avif" alt="Mini-pelle Mécanique 8MCR" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-100">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
+                            <div class="p-6 flex flex-col justify-between flex-grow">
+                                <div>
+                                    <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">Mini-pelle 8MCR</h3>
+                                    <p class="text-sm sm:text-base text-gray-600">Pelle compacte de 8 tonnes, polyvalente et précise pour travaux urbains</p>
+                                </div>
+                            </div>
+                            <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-1')">
+                                <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                            </button>
+                        </div>
+                        <!-- Back Side -->
+                        <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                            <div class="px-4 flex flex-col justify-center items-center">
+                                <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                                <ul class="mt-4 space-y-2">
+                                    <li class="text-gray-600"><span class="font-semibold">Poids :</span> 8 tonnes</li>
+                                    <li class="text-gray-600"><span class="font-semibold">Moteur :</span> 48.5 kW / 66 ch</li>
+                                    <li class="text-gray-600"><span class="font-semibold">Profondeur de fouille :</span> 3.7 m</li>
+                                    <li class="text-gray-600"><span class="font-semibold">Godets :</span> Standard, Curage, Rétro</li>
+                                    <li class="text-gray-600"><span class="font-semibold">Accessoires :</span> Attache rapide hydraulique</li>
+                                </ul>
+                            </div>
+                            <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-1')">
+                                <span class="inline-block transform rotate-90">⮕</span> Retour
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            <!-- Card 2 - Compacteur -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="compacteur" style="animation-delay: 0.2s">
+                <div id="card-2" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/H12I.avif" alt="Compacteur H12I" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">HAMM H12I</h3>
+                                <p class="text-gray-600 mt-2">Compacteur monocylindre de 12 tonnes avec technologie de compactage intelligent pour sols difficiles</p>
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-2')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 12 tonnes</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-2')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 - Mini-pelle -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="pelle" style="animation-delay: 0.3s">
+                <div id="card-3" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/KUBOTA.avif" alt="KUBOTA" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">KUBOTA</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Mini-pelle polyvalente de 8 tonnes avec système d'attache rapide pour changement d'outils</p>
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-3')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 8 tonnes</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-3')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4 - Kubota Démolition -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="demolition" style="animation-delay: 0.3s">
+                <div id="card-4" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/KUBOTA-DEMOL.avif" alt="Kubota Démolition" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">KUBOTA Démolition</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Mini-pelle de 8 tonnes équipée pour la démolition de précision</p>
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-4')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 8 tonnes</li>
+                                <li><span class="font-semibold">Équipements :</span> Pinces et marteaux hydrauliques</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-4')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 5 - LIEBHERR 736 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="bulldozer" style="animation-delay: 0.1s">
+                <div id="card-5" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/LIEBHERR-736.avif" alt="Chargeuse sur pneus" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">LIEBHERR-736</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Bulldozer sur chenilles de 22 tonnes, idéal pour le nivellement et le terrassement de grands espaces</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-5')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 25 tonnes</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-5')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="pelle" style="animation-delay: 0.1s">
+                <div id="card-6" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/LIEBHERR-926.avif" alt="Pelle Mécanique" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">LIEBHERR-926</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Pelle de grande capacité pour les travaux d'excavation et de terrassement importants</p>   
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-6')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 29 tonnes</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-6')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="compacteur" style="animation-delay: 0.1s">
+                <div id="card-7" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/BOMAG-BW-219-DH-3-19T.avif" alt="Compacteur BOMAG BW 219" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">BOMAG-BW-219-DH-3</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Compacteur monocylindre de 19 tonnes pour les travaux de compactage intensifs</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-7')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 19 tonnes</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-7')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="camion" style="animation-delay: 0.1s">
+                <div id="card-8" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/MAN-6X6-15m3.avif" alt="Camion MAN 6x6 15m3" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">MAN-6X6</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Camion 6x6 haute capacité avec benne basculante, spécialisé pour terrains accidentés</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-8')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Capacité :</span> 15 m³</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-8')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="pelle" style="animation-delay: 0.1s">
+                <div id="card-9" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/HYUNDAI-145-LCR-9-15T.avif" alt="Pelle HYUNDAI 145 LCR" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">HYUNDAI 145 LCR 9</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Pelle compacte de 15 tonnes avec faible consommation, idéale pour travaux urbains</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-9')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 15 tonnes</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-9')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 10 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="pelle" style="animation-delay: 0.1s">
+                <div id="card-10" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/KUBOTA-KX080-8T.avif" alt="Pelle KUBOTA KX080" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">KUBOTA-KX080</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Mini-pelle de 8 tonnes, excellente maniabilité pour travaux en espaces restreints</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-10')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 8 tonnes</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-10')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 11 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="bulldozer" style="animation-delay: 0.1s">
+                <div id="card-11" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/LIEBHERR-734-22T.avif" alt="Buldozer LIEBHERR 734" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">LIEBHERR-734</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Bulldozer de 22 tonnes pour les grandes travaux de terrassement et de chargement</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-11')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 22 tonnes</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-11')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 12 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="pelle" style="animation-delay: 0.1s">
+                <div id="card-12" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/LIEBHERR-914-24T.avif" alt="Pelle LIEBHERR 914 24T" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">LIEBHERR-914</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Pelle hydraulique de 24 tonnes, excellente pour les grands chantiers d'excavation</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-12')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 24 tonnes</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-12')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 13 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="pelle" style="animation-delay: 0.1s">
+                <div id="card-13" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/LIEBHERR-914-COMPACT-15T.avif" alt="Pelle LIEBHERR 914 Compact" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">LIEBHERR-914-COMPACT</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Pelle compacte de 15 tonnes, idéale pour les chantiers urbains et espaces restreints</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-13')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 15 tonnes</li>
+                                <li><span class="font-semibold">Dimensions :</span> COMPACT</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-13')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 14 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="pelle" style="animation-delay: 0.1s">
+                <div id="card-14" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/LIEBHERR-924-COMPACT-24T.avif" alt="Pelle LIEBHERR 924 Compact" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">LIEBHERR-924-COMPACT</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Pelle compacte de 24 tonnes, puissante et maniable pour les chantiers exigeants</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-14')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 24 tonnes</li>
+                                <li><span class="font-semibold">Dimensions :</span> COMPACT</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-14')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 15 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="pelle" style="animation-delay: 0.1s">
+                <div id="card-15" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/LIEBHERR-934-32T.avif" alt="Pelle LIEBHERR 934 32T" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">LIEBHERR-934</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Pelle de 32 tonnes pour gros travaux d'excavation et de terrassement</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-15')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 32 tonnes</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-15')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 16 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="pelle" style="animation-delay: 0.1s">
+                <div id="card-16" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/LIEBHERR-936-35T.avif" alt="Pelle LIEBHERR 936 35T" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">LIEBHERR-936</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Pelle de 35 tonnes pour les plus grands chantiers de terrassement et d'excavation</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-16')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 35 tonnes</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-16')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 17 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="camion" style="animation-delay: 0.1s">
+                <div id="card-17" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/CAMION-MAN-8X6-19m3.avif" alt="Camion MAN 8x6 19m3" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">MAN-8x6</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Camion 8x6 haute capacité pour transport de matériaux lourds</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-17')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Dimensions :</span> 8x6</li>
+                                <li><span class="font-semibold">Capacité :</span> 19 m³</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-17')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 18 -->
+            <div class="group perspective h-[26rem] animate-fade-up hover:-translate-y-1 transition-all duration-300 equipment-card" data-category="demolition" style="animation-delay: 0.1s">
+                <div id="card-18" class="relative w-full h-full preserve-3d transform-style-3d transition-all duration-700 hover:shadow-2xl">
+                    <!-- Front Side -->
+                    <div class="absolute backface-hidden w-full h-full bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group-hover:border-orange-200 transition-all duration-300">
+                        <div class="relative overflow-hidden">
+                            <img src="assets/images/engins/LIEBHERR-944-BRAS-DEMOLITION-40T.avif" alt="LIEBHERR 944 Bras de démolition" class="w-full h-48 object-cover object-top transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6 flex flex-col justify-between flex-grow">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-3">LIEBHERR-944-BRAS</h3>
+                                <p class="text-sm sm:text-base text-gray-600">Pelle de 40 tonnes équipée d'un bras de démolition pour travaux de grande hauteur</p>            
+                            </div>
+                        </div>
+                        <button class="mx-4 mb-5 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 text-sm sm:text-base" onclick="toggleCard('card-18')">
+                            <span class="inline-block transform rotate-90">⮕</span> Voir détails
+                        </button>
+                    </div>
+                    <!-- Back Side -->
+                    <div class="absolute backface-hidden rotate-y-180 w-full h-full bg-gray-100 rounded-lg shadow-md flex flex-col justify-between">
+                        <div class="px-4 flex flex-col justify-center items-center">
+                            <h3 class="text-xl font-bold text-gray-800">Détails Techniques</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><span class="font-semibold">Poids :</span> 40 tonnes</li>
+                                <li><span class="font-semibold">Equipement :</span> bras de démolition</li>
+                            </ul>
+                        </div>
+                        <button class="m-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700" onclick="toggleCard('card-18')">
+                            <span class="inline-block transform rotate-90">⮕</span> Retour
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+</section>
+<!-- END SECTION ENGINS -->
+
+<style>
+    /* Styles améliorés pour l'animation des cartes */
+    .backface-hidden {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transition: transform 0.7s;
+    }
+    
+    /* Styles spécifiques pour les faces avant et arrière */
+    .preserve-3d .backface-hidden:not(.rotate-y-180) {
+        /* Face avant */
+        z-index: 1;
+    }
+    
+    .preserve-3d .backface-hidden.rotate-y-180 {
+        /* Face arrière */
+        z-index: 0;
+    }
+    
+    /* Quand la carte est retournée, inverser les z-index */
+    .preserve-3d.rotate-y-180 .backface-hidden:not(.rotate-y-180) {
+        z-index: 0;
+        visibility: hidden;
+    }
+    
+    .preserve-3d.rotate-y-180 .backface-hidden.rotate-y-180 {
+        z-index: 1;
+        visibility: visible;
+    }
+    
+    /* Quand la carte est face avant */
+    .preserve-3d:not(.rotate-y-180) .backface-hidden:not(.rotate-y-180) {
+        visibility: visible;
+    }
+    
+    .preserve-3d:not(.rotate-y-180) .backface-hidden.rotate-y-180 {
+        visibility: hidden;
+    }
+</style>
+
+<script>
+    function toggleCard(cardId) {
+        const card = document.getElementById(cardId);
+        card.classList.toggle('rotate-y-180');
+    }
+
+    function toggleFilterMenu() {
+        const menu = document.getElementById('filterMenu');
+        const arrow = document.getElementById('filterArrow');
+        menu.classList.toggle('hidden');
+        arrow.classList.toggle('rotate-180');
+    }
+
+    function selectFilter(button) {
+        // Enlever la classe active de tous les boutons
+        document.querySelectorAll('.active-filter').forEach(btn => {
+            btn.classList.remove('active-filter');
+            btn.classList.remove('bg-orange-50');
+            btn.classList.remove('border-orange-200');
+        });
+
+        // Ajouter la classe active au bouton sélectionné
+        button.classList.add('active-filter');
+        button.classList.add('bg-orange-50');
+        button.classList.add('border-orange-200');
+
+        // Si on est sur mobile, fermer le menu
+        const menu = document.getElementById('filterMenu');
+        if (menu) {
+            menu.classList.add('hidden');
+            document.getElementById('filterArrow').classList.remove('rotate-180');
+        }
+
+        // Logique de filtrage
+        const selectedCategory = button.getAttribute('data-category');
+        const cards = document.querySelectorAll('.equipment-card');
+
+        cards.forEach(card => {
+            if (selectedCategory === 'all' || card.getAttribute('data-category') === selectedCategory) {
+                card.style.display = '';
+                card.style.opacity = '1';
+            } else {
+                card.style.display = 'none';
+                card.style.opacity = '0';
+            }
+        });
+    }
+
+    // Initialiser les cartes au chargement
+    window.addEventListener('load', function() {
+        const cards = document.querySelectorAll('.equipment-card');
+        cards.forEach(card => {
+            card.style.display = '';
+            card.style.opacity = '1';
+            card.classList.add('animate-fade-up');
+        });
+
+        // Sélectionner le filtre 'Tous' par défaut
+        const allFilter = document.querySelector('[data-category="all"]');
+        if (allFilter) {
+            selectFilter(allFilter);
+        }
+    });
+
+    // Fermer le menu si on clique en dehors
+    document.addEventListener('click', function(event) {
+        const menu = document.getElementById('filterMenu');
+        const button = event.target.closest('button');
+        
+        if (!menu) return;
+        
+        if (!button || !button.onclick || button.onclick.toString().indexOf('toggleFilterMenu') === -1) {
+            menu.classList.add('hidden');
+            document.getElementById('filterArrow').classList.remove('rotate-180');
+        }
+    });
+</script>
+
+<!--------------- START BACK TO TOP --------------->
+<button id="back-to-top" class="fixed bottom-8 right-8 hidden z-50 bg-orange-300 text-black rounded-full p-1 px-3 shadow-lg hover:scale-110 transition-transform duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-10" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 3L8 9h3v9h2V9h3z" />
+    </svg>
+  </button>
+
+  <script>
+    const backToTopButton = document.getElementById('back-to-top');
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    // Show or hide the button based on scroll position
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.remove('hidden');
+        backToTopButton.style.opacity = '1';
+      } else {
+        backToTopButton.style.opacity = '0';
+        setTimeout(() => {
+          if (window.scrollY <= 300) {
+            backToTopButton.classList.add('hidden');
+          }
+        }, 300);
+      }
+
+      // Handle fade-in elements
+      fadeElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+
+    // Smooth scroll to top when the button is clicked
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+<!--------------- END BACK TO TOP --------------->
+
+<!------------- START SECTION FOOTER ------------->
+
+
+<footer class="px-4 divide-y dark:bg-gray-100 dark:text-gray-800">
+	<div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+		<div class="lg:w-1/3">
+			<a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
+				<div class="flex items-center justify-center w-36">
+                    <img class="flex-shrink-0 w-24 dark:text-gray-50" src="/assets/images/JLTP_logo.jpg" alt="">
+				</div>
+			</a>
+		</div>
+		<div class="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-3/3 sm:grid-cols-4 max-[310px]:grid-cols-1">
+			<div class="space-y-3 max-[310px]:text-center">
+				<h3 class="tracking-wide uppercase dark:text-gray-900">Navigation</h3>
+				<ul class="space-y-1">
+                    <li><a href="/index.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Accueil</a></li>
+                    <li><a href="/nos-activites.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nos Activités</a></li>
+                    <li><a href="/a-propos.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">À Propos</a></li>
+                    <li><a href="/realisations.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Réalisations</a></li>
+                    <li><a href="/nous-rejoindre.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nous Rejoindre</a></li>
+                    <li><a href="/nos-engins.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nos Engins</a></li>
+                    <li><a href="/nous-contacter.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nous Contacter</a></li>
+				</ul>
+			</div>
+			<div class="space-y-3">
+				<h3 class="tracking-wide uppercase dark:text-gray-900 text-center">Horaires</h3>
+				<ul class="space-y-1">
+                    <table class="min-w-full mt-4 text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead class="bg-gray-50 dark:bg-gray-700">
+                            <tr>
+                                <th scope="col" class="px-2 py-3">Jour</th>
+                                <th scope="col" class="px-2 py-3">Heures</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-2 py-1">Lundi - Vendredi</td>
+                                <td class="px-2 py-1">07:00 - 17:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+				</ul>
+			</div>
+			<div class="space-y-3 xl:pl-[5rem] max-[310px]:text-center max-[310px]:pl-0">
+				<h3 class="uppercase dark:text-gray-900">Contact</h3>
+				<ul class="space-y-1">
+                        <li class="text-sm text-gray-600 dark:text-gray-400">
+                            TEL :
+                            <a href="tel:+596596421090" class="hover:text-blue-500">
+                                0596 42 10 90
+                            </a>
+                        </li>
+                        <li class="text-sm text-gray-600 dark:text-gray-400">
+                            MAIL :
+                            <a href="mailto:secretariat@jltp.fr" class="hover:text-blue-500">
+                                secretariat@jltp.fr
+                            </a>
+                        </li>
+                        <li class="text-sm text-gray-600 dark:text-gray-400">
+                            LOCALISATION :
+                            <a href="https://www.waze.com/en-GB/live-map/directions?navigate=yes&to=ll.14.60781182%2C-61.00119212" target="_blank" class="hover:text-blue-500">
+                                11 Zac de Manhity, Four à chaux, 97232 Le Lamentin
+                            </a>
+                        </li>
+				</ul>
+			</div>
+			<div class="space-y-3 xl:pl-[5rem] max-[310px]:text-center max-[310px]:pl-0">
+				<div class="uppercase dark:text-gray-900">Réseaux Sociaux</div>
+				<div class="flex justify-start max-[310px]:justify-center space-x-3 pl-[1rem] max-[310px]:pl-0">
+					<a rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=61573722647862" title="Facebook" class="flex items-center p-1">
+						<i class="fa-brands fa-2x fa-facebook"></i>
+					</a>
+					<a rel="noopener noreferrer" href="https://www.linkedin.com/company/jltp" title="Linkedin" class="flex items-center p-1">
+						<i class="fa-brands fa-2x fa-linkedin"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="py-6 text-sm text-center dark:text-gray-600">JLTP 2025 - Tous droits réservés</div>
+</footer>
+
+<!------------- END SECTION FOOTER -------------> 
+
+    
+</body>
+</html>

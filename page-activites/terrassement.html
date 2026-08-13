@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JLTP est une entreprise spécialisée dans les travaux de terrassement, enrochement, et construction de murs de soutènement. Découvrez nos services professionnels adaptés à vos besoins en BTP.">
+    <meta name="keywords" content="JLTP, Terrassement, Mur de soutènement, Enrochement, BTP, Travaux publics, Engins de chantier, Construction Martinique">
+    <meta name="author" content="JLTP">
+    <meta property="og:title" content="JLTP - TERRASSEMENT">
+    <meta property="og:description" content="Découvrez nos services de terrassement et enrochement pour des aménagements sûrs et durables en Martinique.">
+    <meta property="og:image" content="/assets/images/JLTP_logo.jpg">
+    <meta property="og:url" content="https://www.jltp-martinique.com">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/vnd.icon" href="/assets/images/JLTP_logo.jpg">
+    <title>JLTP - TERRASSEMENT</title>
+    <!-- Tailwind CSS -->
+    <link href="/src/output.css" rel="stylesheet">
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/assets/script.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+    <link rel="stylesheet" href="/assets/styles/stylesheets2.css">
+    <!-- LINK ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white loading">
+
+    <!------------ START PRELOADER  ------------>
+    <div id="preloader" class="flex items-center justify-center bg-gray-800 w-full h-screen">
+      <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <!------------ END PRELOADER  ------------>
+
+    <!------------ START HEADER  ------------>
+    <header id="Accueil" class="relative">
+      <nav class="navbar fixed w-full z-50 px-4 py-4 flex justify-between items-center bg-white transition-all duration-300 transform translate-y-0">
+              <a class="text-3xl font-bold leading-none max-xl:order-last" href="/index.html">
+                  <img src="/assets/images/JLTP_logo.jpg" alt="logo JLTP - Société de BTP" style="height:4.5rem">
+              </a>
+              <button class="navbar-burger flex items-center p-3 hover:bg-gray-50 rounded-full transition-colors duration-200 xl:hidden">
+                  <svg class="h-5 w-5 text-gray-600" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                      <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                  </svg>
+              </button>
+              <div class="flex-1"></div>
+              <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto xl:flex lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/index.html">Accueil</a></li>
+  
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/nos-activites.html">Nos Activités</a></li>
+  
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/a-propos.html">A Propos</a></li>
+  
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/realisations.html">Réalisations</a></li>
+  
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/nous-rejoindre.html">Nous Rejoindre</a></li>
+  
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/nos-engins.html">Nos Engins</a></li>
+            </ul>
+            <a class="mr-3 rounded-sm max-xl:hidden bg-orange-600 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-black-500/20 transition-all hover:shadow-lg hover:shadow-black-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" href="/nous-contacter.html">CONTACTEZ NOUS</a>
+    </nav>
+    <div class="navbar-menu relative z-50 hidden">
+        <div class="navbar-backdrop fixed inset-0 bg-gray-800/25 backdrop-blur-sm"></div>
+        <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto" style="box-shadow: 0 0 15px rgba(0,0,0,0.1);">
+            <div class="flex items-center mb-8">
+                <a class="mr-auto text-3xl font-bold leading-none" href="/index.html">
+                    <img src="/assets/images/JLTP_logo.jpg" alt="logo JLTP - Société de BTP" style="height:2rem">
+                </a>
+                <button class="navbar-close">
+                    <svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div>
+                <ul class="text-center">
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/index.html">Accueil</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/nos-activites.html">Nos Activités</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/a-propos.html">A Propos</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/realisations.html">Réalisations</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/nous-rejoindre.html">Nous Rejoindre</a>
+                    </li>
+                    <li class="mb-1">
+                        <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/nos-engins.html">Nos Engins</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-auto">
+                <div class="pt-6 text-center">
+                  <a class="block w-full capitalize px-4 py-2 lg:px-8 lg:py-4 text-md lg:text-base font-semibold text-center text-white bg-orange-500 hover:bg-orange-600 rounded-lg transition-colors duration-200" href="/nous-contacter.html">Nous Contacter</a>
+                </div>
+                <p class="my-4 text-xs text-center text-gray-400">
+                    <span>Copyright © 2025</span>
+                </p>
+            </div>
+        </nav>
+    </div>
+  </header>
+  <!------------- END HEADER  ------------->
+
+<!------------- START LANDING-PAGE  ------------->
+  <div class="flex flex-col lg:flex-row items-center justify-center overflow-hidden px-4">
+    <div class="relative w-full lg:w-2/5 shrink-0 overflow-hidden rounded-xl bg-white text-gray-700">
+      <img
+        src="/assets/images/section-realisation/terrassement/terrassement.avif"
+        alt="image"
+        class="object-cover h-[300px] md:h-[400px] lg:h-[500px] xl:h-[700px] w-full"
+      />
+    </div>
+    <div class="p-6 my-auto text-center lg:text-left">
+      <h6 class="mb-4 font-sans text-sm md:text-base font-semibold uppercase leading-relaxed text-indigo-500">
+        Notre Activité
+      </h6>
+      <h4 class="my-4 font-sans text-xl sm:text-2xl md:text-3xl xl:text-4xl font-semibold leading-snug text-blue-gray-900">
+        Le Terrassement
+      </h4>
+      <p class="mb-8 font-sans text-sm md:text-base lg:text-lg xl:text-xl text-gray-700">
+        Chez JLTP, nos activités incluent des travaux de terrassement pour préparer vos terrains en vue de tout type de construction. Nos interventions garantissent une assise solide et durable, assurant la stabilité et la viabilité de vos projets.
+      </p>
+      <a href="/nous-contacter.html" class="inline-block">
+        <button
+          class="flex items-center gap-2 rounded-lg py-2 px-4 lg:py-3 lg:px-6 text-center font-sans text-xs lg:text-sm font-bold uppercase text-indigo-500 transition-all hover:bg-indigo-700/10"
+          type="button"
+        >
+          PRENDRE CONTACT
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            aria-hidden="true"
+            class="h-4 w-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+            ></path>
+          </svg>
+        </button>
+      </a>
+    </div>
+  </div>
+
+<!------------- END LANDING-PAGE ------------->
+
+<!------------- START QUESTIONS  ------------->
+  <section class="bg-white mt-[5rem]">
+    <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 ">
+      <h2
+        class="mb-6 text-2xl sm:text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl">
+        Questions <strong class="text-indigo-600">fréquement posées</strong></h2>
+      <div class="max-w-screen-md mx-auto">
+        <div id="accordion-flush" data-accordion="collapse"
+          data-active-classes="bg-white text-gray-900"
+          data-inactive-classes="text-gray-500 dark:text-gray-400">
+          <h3 id="accordion-flush-heading-1">
+            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900 bg-white border-b border-gray-200" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+  <span>Qu’est-ce que le terrassement ?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+   </button>
+          </h3>
+          <div id="accordion-flush-body-1" class="" aria-labelledby="accordion-flush-heading-1">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+              <p class="mb-2 text-gray-500 dark:text-gray-400"> Le terrassement consiste à préparer un terrain pour la 
+                construction en déplaçant la terre, en nivelant le sol et en créant une base stable pour les futures structures.</p>
+            </div>
+          </div>
+          <h3 id="accordion-flush-heading-2">
+            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+  <span>Quels sont les différents types de terrassement ? </span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+  </button>
+          </h3>
+          <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">Les principaux types incluent le terrassement en déblai (enlever de la matière), en remblai 
+                (ajouter de la matière) et en nivellement (mise à niveau).</p>
+            </div>
+          </div>
+          <h3 id="accordion-flush-heading-3">
+            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+  <span>Pourquoi est-il important de réaliser une étude de sol avant un terrassement ? </span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+  </button>
+          </h3>
+          <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">Une étude de sol permet de connaître les caractéristiques du terrain,
+                comme sa portance et son homogénéité, afin d’éviter les affaissements ou autres problèmes structurels.
+            </div>
+          </div>
+          <h3 id="accordion-flush-heading-4">
+            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
+  <span>Combien coûte un terrassement ?</span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+  </button>
+          </h3>
+          <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Le coût dépend de la taille du terrain, de la nature du sol, des équipements nécessaires et de la difficulté d’accès. Une estimation peut être obtenue après une visite technique.
+              </p>
+            </div>
+          </div>
+          <h3 id="accordion-flush-heading-5">
+            <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
+  <span>Quels engins sont utilisés pour le terrassement ? </span>
+  <svg data-accordion-icon="" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+  </button>
+          </h3>
+          <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-3">
+            <div class="py-5 border-b border-gray-200 dark:border-gray-700">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                Les engins courants incluent les pelleteuses, les bulldozers, les niveleuses et les compacteurs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!------------- END QUESTIONS  ------------->
+    
+<!------------- START REALISATIONS ------------->
+    <section class="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="max-w-7xl mx-auto text-center px-4">
+            <h2 class="text-4xl font-bold mb-2 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">Nos Réalisations</h2>
+            <p class="text-gray-600 mb-12">Découvrez nos projets de terrassement avant et après</p>
+        </div>
+    </section>
+    
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 120px;
+    }
+  
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      border-radius: 12px;
+      overflow: hidden;
+      position: relative;
+    }
+  
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+  
+    .swiper-slide:hover img {
+      transform: scale(1.05);
+    }
+  
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      background: #ff8a00;
+      opacity: 0.5;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: #ff6b00;
+    }
+  
+    /* Responsiveness for larger screens */
+    @media (min-width: 640px) {
+      .swiper-slide {
+        width: 450px;
+        height: 450px;
+      }
+      .swiper {
+        padding-bottom: 180px;
+      }
+    }
+  </style>
+
+  <!--------------------- SECTION RÉALISATION PHOTOS --------------------->
+  <div class="swiper mySwiperRealisation">
+    <div class="swiper-wrapper">
+        <!-- Projet Cheval Blanc -->
+        <div class="swiper-slide relative group">
+          <img src="/assets/images/section-realisation/terrassement/Cheval-Blanc2.avif" alt="Cheval Blanc - Avant" class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"/>
+          <div class="absolute top-4 left-4 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">AVANT</div>
+          <div class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Cheval Blanc</div>
+        </div>
+        <div class="swiper-slide relative group">
+          <img src="/assets/images/section-realisation/terrassement/Cheval-Blanc1.avif" alt="Cheval Blanc - Après" class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"/>
+          <div class="absolute top-4 left-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">APRÈS</div>
+          <div class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Cheval Blanc</div>
+        </div>
+        <!-- Projet Terrassement 1 -->
+        <div class="swiper-slide relative group">
+          <img src="/assets/images/section-realisation/terrassement/img1.avif" alt="Terrassement Plateau Sportif - Avant" class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"/>
+          <div class="absolute top-4 left-4 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">AVANT</div>
+          <div class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Terrassement Plateau Sportif</div>
+        </div>
+        <div class="swiper-slide relative group">
+          <img src="/assets/images/section-realisation/terrassement/img2.avif" alt="Terrassement Plateau Sportif - Après" class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"/>
+          <div class="absolute top-4 left-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">APRÈS</div>
+          <div class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Terrassement Plateau Sportif</div>
+        </div>
+        <!-- Projet Construction -->
+        <div class="swiper-slide relative group">
+          <img src="/assets/images/section-realisation/terrassement/img1.1.avif" alt="Construction Routière - Avant" class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"/>
+          <div class="absolute top-4 left-4 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">AVANT</div>
+          <div class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Construction Routière</div>
+        </div>
+        <div class="swiper-slide relative group">
+          <img src="/assets/images/section-realisation/terrassement/img1.2.avif" alt="Construction Routière - Après" class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"/>
+          <div class="absolute top-4 left-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">APRÈS</div>
+          <div class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Construction Routière</div>
+        </div>
+        <!-- Projet Sara -->
+        <div class="swiper-slide relative group">
+          <img src="/assets/images/section-realisation/terrassement/Sara1.avif" alt="Projet Sara - Avant" class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"/>
+          <div class="absolute top-4 left-4 bg-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">AVANT</div>
+          <div class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Projet Sara</div>
+        </div>
+        <div class="swiper-slide relative group">
+          <img src="/assets/images/section-realisation/terrassement/Sara2.avif" alt="Projet Sara - Après" class="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"/>
+          <div class="absolute top-4 left-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">APRÈS</div>
+          <div class="absolute bottom-4 left-4 bg-white/80 backdrop-blur-sm text-gray-800 px-4 py-2 rounded-lg text-sm font-semibold shadow-lg">Projet Sara</div>
+        </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiperRealisation", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        initialSlide: 1,
+        speed: 800,
+        coverflowEffect: {
+          rotate: 30,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+    
+<!------------- END REALISATIONS ------------->
+
+<!--------------- START BACK TO TOP --------------->
+<button id="back-to-top" class="fixed bottom-8 right-8 hidden z-50 bg-orange-300 text-black rounded-full p-1 px-3 shadow-lg hover:scale-110 transition-transform duration-300">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-10" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 3L8 9h3v9h2V9h3z" />
+  </svg>
+</button>
+
+<script>
+  const backToTopButton = document.getElementById('back-to-top');
+  const fadeElements = document.querySelectorAll('.fade-in');
+
+  // Show or hide the button based on scroll position
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTopButton.classList.remove('hidden');
+      backToTopButton.style.opacity = '1';
+    } else {
+      backToTopButton.style.opacity = '0';
+      setTimeout(() => {
+        if (window.scrollY <= 300) {
+          backToTopButton.classList.add('hidden');
+        }
+      }, 300);
+    }
+
+    // Handle fade-in elements
+    fadeElements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        el.classList.add('visible');
+      }
+    });
+  });
+
+  // Smooth scroll to top when the button is clicked
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+<!--------------- END BACK TO TOP --------------->
+  
+<!------------- START SECTION FOOTER ------------->
+
+
+<footer class="px-4 divide-y">
+	<div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+		<div class="lg:w-1/3">
+			<a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
+				<div class="flex items-center justify-center w-36">
+                    <img class="flex-shrink-0 w-24 dark:text-gray-50" src="/assets/images/JLTP_logo.jpg" alt="">
+				</div>
+			</a>
+		</div>
+		<div class="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-3/3 sm:grid-cols-4 max-[310px]:grid-cols-1">
+			<div class="space-y-3 max-[310px]:text-center">
+				<h3 class="tracking-wide uppercase dark:text-gray-900">Navigation</h3>
+				<ul class="space-y-1">
+          <li><a href="/index.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Accueil</a></li>
+          <li><a href="/nos-activites.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nos Activités</a></li>
+          <li><a href="/a-propos.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">À Propos</a></li>
+          <li><a href="/realisations.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Réalisations</a></li>
+          <li><a href="/nous-rejoindre.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nous Rejoindre</a></li>
+          <li><a href="/nos-engins.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nos Engins</a></li>
+          <li><a href="/nous-contacter.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nous Contacter</a></li>
+				</ul>
+			</div>
+			<div class="space-y-3">
+				<h3 class="tracking-wide uppercase dark:text-gray-900 text-center">Horaires</h3>
+				<ul class="space-y-1">
+                    <table class="min-w-full mt-4 text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th scope="col" class="px-2 py-3">Jour</th>
+                                <th scope="col" class="px-2 py-3">Heures</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-2 py-1">Lundi - Vendredi</td>
+                                <td class="px-2 py-1">07:00 - 17:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+				</ul>
+			</div>
+			<div class="space-y-3 xl:pl-[5rem] max-[310px]:text-center max-[310px]:pl-0">
+				<h3 class="uppercase dark:text-gray-900">Contact</h3>
+				<ul class="space-y-1">
+            <li class="text-sm text-gray-600 dark:text-gray-400">
+              TEL :
+              <a href="tel:+596596421090" class="hover:text-blue-500">
+                  0596 42 10 90
+              </a>
+            </li>
+            <li class="text-sm text-gray-600 dark:text-gray-400">
+              MAIL :
+              <a href="mailto:secretariat@jltp.fr" class="hover:text-blue-500">
+                  secretariat@jltp.fr
+              </a>
+            </li>
+            <li class="text-sm text-gray-600 dark:text-gray-400">
+              LOCALISATION :
+              <a href="https://www.waze.com/en-GB/live-map/directions?navigate=yes&to=ll.14.60781182%2C-61.00119212" target="_blank" class="hover:text-blue-500">
+                11 Zac de Manhity, Four à chaux, 97232 Le Lamentin
+              </a>
+            </li>
+				</ul>
+			</div>
+			<div class="space-y-3 xl:pl-[5rem] max-[310px]:text-center max-[310px]:pl-0">
+				<div class="uppercase dark:text-gray-900">Réseaux Sociaux</div>
+				<div class="flex justify-start max-[310px]:justify-center space-x-3 pl-[1rem] max-[310px]:pl-0">
+					<a rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=61573722647862" title="Facebook" class="flex items-center p-1">
+						<i class="fa-brands fa-2x fa-facebook"></i>
+					</a>
+					<a rel="noopener noreferrer" href="https://www.linkedin.com/company/jltp" title="Linkedin" class="flex items-center p-1">
+						<i class="fa-brands fa-2x fa-linkedin"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="py-6 text-sm text-center dark:text-gray-600">JLTP 2025 - Tous droits réservés</div>
+</footer>
+
+<!------------- END SECTION FOOTER -------------> 
+</body>
+</html>

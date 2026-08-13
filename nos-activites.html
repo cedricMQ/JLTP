@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JLTP est une entreprise spécialisée dans les travaux de terrassement, enrochement, et construction de murs de soutènement. Découvrez nos services professionnels adaptés à vos besoins en BTP.">
+    <meta name="keywords" content="JLTP, Terrassement, Mur de soutènement, Enrochement, BTP, Travaux publics, Engins de chantier, Construction Martinique">
+    <meta name="author" content="JLTP">
+    <meta property="og:title" content="JLTP - TERRASSEMENT">
+    <meta property="og:description" content="Découvrez nos services de terrassement et enrochement pour des aménagements sûrs et durables en Martinique.">
+    <meta property="og:image" content="/assets/images/JLTP_logo.jpg">
+    <meta property="og:url" content="https://www.jltp.fr">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/vnd.icon" href="/assets/images/JLTP_logo.jpg">
+    <title>JLTP - NOS ACTIVITÉS</title>
+    <!-- LINK FILES -->
+    <script src="/assets/script.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+    <link rel="stylesheet" href="/assets/styles/stylesheets2.css">
+    <!-- Tailwind CSS -->
+    <link href="/src/output.css" rel="stylesheet">
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- LINK ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <!-- LINK FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- AOS CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body class="bg-white loading">
+
+    <!------------ START PRELOADER  ------------>
+    <div id="preloader" class="flex items-center justify-center bg-gray-800 w-full h-screen">
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!------------ END PRELOADER  ------------>
+
+    <!------------ START HEADER  ------------>
+    <header id="Accueil" class="relative">
+        <nav class="navbar fixed w-full z-50 px-4 py-4 flex justify-between items-center bg-white transition-all duration-300 transform translate-y-0">
+            <a class="text-3xl font-bold max-xl:order-last" href="/index.html">
+                <img src="/assets/images/JLTP_logo.jpg" alt="logo JLTP - Société de BTP" style="height:5rem">
+            </a>
+            <button class="navbar-burger flex items-center p-3 hover:bg-gray-50 rounded-full transition-colors duration-200 xl:hidden">
+                <svg class="h-5 w-5 text-gray-600" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+                </svg>
+            </button>
+            <div class="flex-1"></div>
+            <ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto xl:flex lg:items-center lg:w-auto lg:space-x-6">
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/index.html">Accueil</a></li>
+
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/nos-activites.html">Nos Activités</a></li>
+
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/a-propos.html">A Propos</a></li>
+
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/realisations.html">Réalisations</a></li>
+
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/nous-rejoindre.html">Nous Rejoindre</a></li>
+
+                <li><a class="text-lg text-black relative inline cursor-pointer font-medium before:bg-orange-500 before:absolute before:-bottom-1 before:block before:h-[2px] before:w-full before:origin-bottom-right before:scale-x-0 before:transition before:duration-300 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100" href="/nos-engins.html">Nos Engins</a></li>
+            </ul>
+            <a class="mr-3 rounded-sm max-xl:hidden bg-orange-600 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-black-500/20 transition-all hover:shadow-lg hover:shadow-black-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" href="/nous-contacter.html">CONTACTEZ NOUS</a>
+        </nav>
+        <div class="navbar-menu fixed inset-0 z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300"></div>
+            <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-[85%] max-w-sm py-8 px-8 bg-white overflow-y-auto transform transition-transform duration-300 ease-in-out" style="box-shadow: 5px 0 25px rgba(0,0,0,0.1);">
+                <div class="flex items-center mb-10">
+                    <button class="navbar-close p-2 hover:bg-gray-100 rounded-full transition-colors duration-200">
+                        <svg class="h-6 w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                    <div class="flex-1"></div>
+                    <a class="text-3xl font-bold leading-none" href="index.html">
+                        <img src="/assets/images/JLTP_logo.jpg" alt="logo JLTP - Société de BTP" class="h-8 w-auto">
+                    </a>
+                </div>
+                <div class="flex flex-col justify-between h-full">
+                    <ul class="space-y-3 mb-8 text-center">
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/index.html">Accueil</a>
+                        </li>
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/nos-activites.html">Nos Activités</a>
+                        </li>
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/a-propos.html">A Propos</a>
+                        </li>
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/realisations.html">Réalisations</a>
+                        </li>
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/nous-rejoindre.html">Nous Rejoindre</a>
+                        </li>
+                        <li>
+                            <a class="inline-block px-8 py-3.5 text-base font-medium text-gray-800 hover:bg-orange-50 hover:text-orange-500 rounded-lg transition-colors duration-200" href="/nos-engins.html">Nos Engins</a>
+                        </li>
+                    </ul>
+                    <div class="mt-auto px-6">
+                        <a class="block capitalize w-full px-4 py-2 lg:px-8 lg:py-4 text-md lg:text-base font-semibold text-center text-white bg-orange-500 hover:bg-orange-600 rounded-lg transition-colors duration-200" href="/nous-contacter.html">Nous Contacter</a>
+                    </div>
+                    <div class="mt-6 text-center">
+                        <span class="text-sm text-gray-500">Copyright © 2025 JLTP</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!------------- END HEADER  ------------->
+
+<!------------- START SECTION ACTIVITES ------------->
+<section class="relative min-h-[100vh] flex items-center justify-center overflow-hidden bg-black">
+    <!-- Image de fond avec effet de parallaxe subtil -->
+    <div class="absolute inset-0 w-full h-full">
+        <div class="absolute inset-0 bg-cover bg-center scale-105 transition-transform duration-1000 ease-out transform" 
+             style="background-image: url('/assets/images/nos-activites-img.avif'); filter: brightness(0.8) contrast(1.2);">
+        </div>
+        <!-- Overlay avec effet de verre et dégradé -->
+        <div class="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-800/70 to-black/90 backdrop-blur-[1px]"></div>
+    </div>
+
+    <!-- Contenu principal avec effet de verre -->
+    <div class="relative z-10 container mx-auto px-4 mt-[-4rem]">
+        <div class="text-center space-y-8">
+            <!-- Titre principal -->
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tight leading-none mb-8"
+                style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);" data-aos="fade-down" data-aos-duration="600" data-aos-delay="400" data-aos-mirror="true">
+                Nos <span class="bg-clip-text text-transparent bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600">Activités</span>
+            </h1>
+
+            <!-- Sous-titre -->
+            <p class="text-lg md:text-2xl text-gray-100 max-w-3xl mx-auto font-light leading-relaxed"
+               style="text-shadow: 1px 1px 2px rgba(0,0,0,0.2);" data-aos="fade-down" data-aos-duration="600" data-aos-delay="600" data-aos-mirror="true">
+               Découvrez notre gamme complète de services professionnels,<br class="hidden md:block">
+               conçus pour transformer vos projets en réalité.
+            </p>
+
+            <!-- Séparateur décoratif -->
+            <div class="flex justify-center items-center gap-4 my-8" data-aos="fade-down" data-aos-duration="800" data-aos-delay="900" data-aos-mirror="true">
+                <div class="h-[1px] w-12 bg-gradient-to-r from-transparent via-orange-400 to-transparent"></div>
+                <div class="h-2 w-2 rounded-full bg-orange-500"></div>
+                <div class="h-[1px] w-12 bg-gradient-to-r from-transparent via-orange-400 to-transparent"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Effet de particules -->
+    <div class="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(249,115,22,0.2)_0%,rgba(0,0,0,0)_70%)] animate-pulse"></div>
+    </div>
+
+    <!-- START Flèche de défilement avec effet d'exploration -->
+    <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 z-10">
+        <button onclick="scrollToProjects()" class="animate-bounce group relative flex items-center justify-center p-2 w-10 h-10 bg-white/20 rounded-full shadow-lg ring-1 ring-white/20 transition-all duration-300">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        function scrollToProjects() {
+            document.getElementById('Activites').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <!-- END Flèche de défilement avec effet d'exploration -->
+</section>
+
+<!------------- START 2 SECTION ACTIVITES ------------->
+<section id="Activites" class="bg-white pt-16">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="text-center">
+            <!-- trait -->
+            <div class="bg-orange-300 w-16 h-1 mx-auto mb-6" data-aos="flip-up" data-aos-duration="1000" data-aos-mirror="true"></div>
+            <h2 class="text-3xl lg:text-5xl font-bold leading-tight text-gray-900 py-0 lg:py-5" data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true">
+                Nos <span class="text-orange-400" data-aos="fade" data-aos-delay="300" data-aos-mirror="true">Activités</span>
+            </h2>
+            <p class="text-sm md:text-xl mt-4 leading-7 text-gray-600 sm:mt-8" data-aos="fade-up" data-aos-duration="1000" data-aos-mirror="true">
+                JLTP votre partenaire de confiance pour vos travaux de construction et de démolition. Nous mettons notre expertise et notre passion pour garantir des réalisations durables.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
+            <!-- Feature 1 -->
+            <div class="md:p-8 lg:p-14 flex flex-col justify-center items-center group hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="800" data-aos-mirror="true">
+                <a href="/page-activites/terrassement.html">
+                    <div class="flex justify-center items-center">
+                        <img src="/assets/images/nos-activites/terrassement.png" width="112" height="112" alt="illustration d'un terrassement">
+                    </div>
+                    <h3 class="mt-12 text-lg lg:text-xl font-bold text-gray-900">TERRASSEMENT</h3>
+                    <p class="mt-5 text-sm lg:text-base text-gray-600">Nous réalisons des travaux de terrassement pour préparer les terrains à tout type de construction.</p><br><br>
+                </a>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center group hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="800" data-aos-mirror="true">
+                <a href="/page-activites/assainissement.html">
+                    <div class="flex justify-center items-center">
+                        <img src="/assets/images/nos-activites/assainissement.png" width="112" height="112" alt="illustration d'Assainissement">
+                    </div>
+                    <h3 class="mt-12 text-lg lg:text-xl font-bold text-gray-900">ASSAINISSEMENT</h3>
+                    <p class="mt-5 text-sm lg:text-base text-gray-600">Nous couvrent l'installation et la gestion des réseaux d'eaux pluviales, usées et non usées.</p><br><br>
+                </a>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 flex flex-col justify-center items-center group hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in-up" data-aos-delay="200" data-aos-duration="800" data-aos-mirror="true">
+                <a href="/page-activites/VRD.html">
+                    <div class="flex justify-center items-center p-4">
+                        <img src="/assets/images/nos-activites/VRD.png" width="80" height="80" alt="illustration d'un VRD">
+                    </div>
+                    <h3 class="mt-12 text-lg lg:text-xl font-bold text-gray-900">V.R.D</h3>
+                    <p class="mt-5 text-sm lg:text-base text-gray-600">Nous intervenons pour assurer la création et l’aménagement de voiries, ainsi que l’installation de réseaux divers (eaux, électricité, télécommunications).</p> <br>
+                </a>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="md:p-8 lg:p-14 md:border-t md:border-gray-200 flex flex-col justify-center items-center" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="800" data-aos-mirror="true">
+                <a href="/page-activites/demolition.html">
+                    <div class="flex justify-center items-center">
+                        <img src="/assets/images/nos-activites/demolition.png" width="75" height="75" alt="illustration d'une démolition">
+                    </div>
+                    <h3 class="mt-12 text-lg lg:text-xl font-bold text-gray-900">DEMOLITION</h3>
+                    <p class="mt-5 text-sm lg:text-base text-gray-600">Nos démolitions consistent à démolir des bâtiments industriels, commerciaux ou publics.</p><br>
+                </a>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="800" data-aos-mirror="true">
+                <a href="/page-activites/mur-de-soutenement.html">
+                    <div class="flex justify-center items-center p-5 pt-[5rem]">
+                        <img src="/assets/images/nos-activites/mur-de-soutenement.png" width="80" height="80" alt="illustration d'un mur de soutènement">
+                    </div>
+                    <h3 class="mt-6 text-lg lg:text-xl font-bold text-gray-900">MUR DE SOUTENEMENT <br> ENROCHEMENT</h3>
+                    <p class="mt-5 text-sm lg:text-base text-gray-600">Nous construisons des murs de soutènement pour stabiliser les sols en pente et aussi de l’enrochement, 
+                        permettant de renforcer les pentes et de contrôler l'érosion.</p><br>
+                </a>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t flex flex-col justify-center items-center" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="800" data-aos-mirror="true">
+                <a href="/page-activites/location-engins.html">
+                    <div class="flex justify-center items-center p-1">
+                        <img src="/assets/images/nos-activites/machine.png" width="112" height="112" alt="illustration d'une location d'engins">
+                    </div>
+                    <h3 class="mt-12 text-lg lg:text-xl font-bold text-gray-900">LOCATION D'ENGINS</h3>
+                    <p class="mt-5 text-sm lg:text-base text-gray-600">La location de nos engins inclut obligatoirement un opérateur qualifié de notre équipe pour garantir sécurité et performance. <br><br><br>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------ END SECTION ACTIVITES ------------>
+
+<!--------------- START BACK TO TOP --------------->
+  <button id="back-to-top" class="fixed bottom-8 right-8 hidden z-50 bg-orange-300 text-black rounded-full p-1 px-3 shadow-lg hover:scale-110 transition-transform duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-10" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 3L8 9h3v9h2V9h3z" />
+    </svg>
+  </button>
+
+  <script>
+    const backToTopButton = document.getElementById('back-to-top');
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    // Show or hide the button based on scroll position
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopButton.classList.remove('hidden');
+        backToTopButton.style.opacity = '1';
+      } else {
+        backToTopButton.style.opacity = '0';
+        setTimeout(() => {
+          if (window.scrollY <= 300) {
+            backToTopButton.classList.add('hidden');
+          }
+        }, 300);
+      }
+
+      // Handle fade-in elements
+      fadeElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+
+    // Smooth scroll to top when the button is clicked
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+<!--------------- END BACK TO TOP --------------->
+  
+<!------------- START SECTION FOOTER ------------->
+
+
+<footer class="px-4 divide-y dark:bg-gray-100 dark:text-gray-800">
+	<div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+		<div class="lg:w-1/3">
+			<a rel="noopener noreferrer" href="#" class="flex justify-center space-x-3 lg:justify-start">
+				<div class="flex items-center justify-center w-36">
+                    <img class="flex-shrink-0 w-24 dark:text-gray-50" src="/assets/images/JLTP_logo.jpg" alt="">
+				</div>
+			</a>
+		</div>
+		<div class="grid grid-cols-2 text-sm gap-x-3 gap-y-8 lg:w-3/3 sm:grid-cols-4 max-[310px]:grid-cols-1">
+			<div class="space-y-3 max-[310px]:text-center">
+				<h3 class="tracking-wide uppercase dark:text-gray-900">Navigation</h3>
+				<ul class="space-y-1">
+                    <li><a href="/index.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Accueil</a></li>
+                    <li><a href="/nos-activites.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nos Activités</a></li>
+                    <li><a href="/a-propos.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">À Propos</a></li>
+                    <li><a href="/realisations.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Réalisations</a></li>
+                    <li><a href="/nous-rejoindre.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nous Rejoindre</a></li>
+                    <li><a href="/nos-engins.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nos Engins</a></li>
+                    <li><a href="/nous-contacter.html" class="text-sm text-gray-600 dark:text-gray-400 hover:underline">Nous Contacter</a></li>
+				</ul>
+			</div>
+			<div class="space-y-3">
+				<h3 class="tracking-wide uppercase dark:text-gray-900 text-center">Horaires</h3>
+				<ul class="space-y-1">
+                    <table class="min-w-full mt-4 text-sm text-left text-gray-500 dark:text-gray-400">
+                        <thead class="bg-gray-50 dark:bg-gray-700">
+                            <tr>
+                                <th scope="col" class="px-2 py-3">Jour</th>
+                                <th scope="col" class="px-2 py-3">Heures</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="px-2 py-1">Lundi - Vendredi</td>
+                                <td class="px-2 py-1">07:00 - 17:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+				</ul>
+			</div>
+			<div class="space-y-3 xl:pl-[5rem] max-[310px]:text-center max-[310px]:pl-0">
+				<h3 class="uppercase dark:text-gray-900">Contact</h3>
+				<ul class="space-y-1">
+                        <li class="text-sm text-gray-600 dark:text-gray-400">
+                            TEL :
+                            <a href="tel:+596596421090" class="hover:text-blue-500">
+                                0596 42 10 90
+                            </a>
+                        </li>
+                        <li class="text-sm text-gray-600 dark:text-gray-400">
+                            MAIL :
+                            <a href="mailto:secretariat@jltp.fr" class="hover:text-blue-500">
+                                secretariat@jltp.fr
+                            </a>
+                        </li>
+                        <li class="text-sm text-gray-600 dark:text-gray-400">
+                            LOCALISATION :
+                            <a href="https://www.waze.com/en-GB/live-map/directions?navigate=yes&to=ll.14.60781182%2C-61.00119212" target="_blank" class="hover:text-blue-500">
+                                11 Zac de Manhity, Four à chaux, 97232 Le Lamentin
+                            </a>
+                        </li>
+				</ul>
+			</div>
+			<div class="space-y-3 xl:pl-[5rem] max-[310px]:text-center max-[310px]:pl-0">
+				<div class="uppercase dark:text-gray-900">Réseaux Sociaux</div>
+				<div class="flex justify-start max-[310px]:justify-center space-x-3 pl-[1rem] max-[310px]:pl-0">
+					<a rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=61573722647862" title="Facebook" class="flex items-center p-1">
+						<i class="fa-brands fa-2x fa-facebook"></i>
+					</a>
+					<a rel="noopener noreferrer" href="https://www.linkedin.com/company/jltp" title="Linkedin" class="flex items-center p-1">
+						<i class="fa-brands fa-2x fa-linkedin"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="py-6 text-sm text-center dark:text-gray-600">JLTP 2025 - Tous droits réservés</div>
+</footer>
+
+<!------------- END SECTION FOOTER -------------> 
+
+ <!-- Initialize AOS -->
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-out',
+            mirror: true,
+            offset: 100,
+            once: false,
+            anchorPlacement: 'top-bottom'
+        });
+    });
+</script>
+
+</body>
+</html>

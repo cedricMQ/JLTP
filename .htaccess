@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^jltp\.fr$ [NC]
+RewriteRule ^(.*)$ https://www.jltp.fr/$1 [L,R=301]
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+

@@ -1,0 +1,28 @@
+@keyframes float-slow {
+    0% { transform: translateY(0) translateX(0); }
+    50% { transform: translateY(-10px) translateX(5px); }
+    100% { transform: translateY(0) translateX(0); }
+}
+
+.animate-float-slow {
+    animation: float-slow 6s ease-in-out infinite;
+}
+
+@keyframes particle-float {
+    0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-100vh) translateX(100px) rotate(360deg); opacity: 0; }
+}
+
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(255, 120, 0, 0.3);
+    border-radius: 50%;
+    animation: particle-float 15s linear infinite;
+}
+
+.particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+.particle:nth-child(2) { left: 50%; animation-delay: 4s; }
+.particle:nth-child(3) { left: 80%; animation-delay: 8s; }
